@@ -22,11 +22,11 @@ RUN \
 VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx", "/var/www/html"]
 
 COPY *.html /var/www/html/
-COPY css/ /var/www/html/
-COPY fonts/ /var/www/html/
-COPY images/ /var/www/html/
-COPY js/ /var/www/html/
-COPY sass/ /var/www/html/
+add css/ /var/www/html/
+add fonts/ /var/www/html/
+add images/ /var/www/html/
+add js/ /var/www/html/
+add sass/ /var/www/html/
 # Define working directory.
 WORKDIR /etc/nginx
 
