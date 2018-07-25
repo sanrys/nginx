@@ -1,5 +1,5 @@
 #
-# Nginx Dockerfile
+# Nginx Dockerfile Cusome
 #
 # https://github.com/dockerfile/nginx
 #
@@ -22,7 +22,7 @@ RUN \
 VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx", "/var/www/html"]
 
 COPY *.html /var/www/html/
-ADD cube.zip /var/www/html/
+ADD cube.tar.gz /var/www/html/
 # Define working directory.
 WORKDIR /etc/nginx
 
